@@ -376,7 +376,6 @@ class TMSG:
             e2_target = temps["tool1"]["target"] if "tool1" in temps else 0.0
             percent = int(status["progress"]["completion"] or 0)
             filament_cost = int(status["job"]["filament"]["tool0"]["length"] or 0) / 1000
-            file_name = status["job"]["file"]["name"] or "file_name"
 
             try:
                 Layers = self.main.get_current_layers()
